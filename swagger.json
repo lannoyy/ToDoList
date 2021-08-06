@@ -1,0 +1,135 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "ReTech Labs",
+        "description": "Test task for ReTech Lab",
+        "version": "v1"
+    },
+    "basePath": "/",
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "securityDefinitions": {
+        "Basic": {
+            "type": "basic"
+        }
+    },
+    "security": [
+        {
+            "Basic": []
+        }
+    ],
+    "paths": {
+        "/api_auth/sign_in": {
+            "post": {
+                "operationId": "api_auth_sign_in_create",
+                "description": "View for authorization on jwt token",
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "api_auth"
+                ]
+            },
+            "parameters": []
+        },
+        "/to_do_lists/": {
+            "get": {
+                "operationId": "to_do_lists_list",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "post": {
+                "operationId": "to_do_lists_create",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "201": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "parameters": []
+        },
+        "/to_do_lists/{id}/": {
+            "get": {
+                "operationId": "to_do_lists_read",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "put": {
+                "operationId": "to_do_lists_update",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "patch": {
+                "operationId": "to_do_lists_partial_update",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "delete": {
+                "operationId": "to_do_lists_delete",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "204": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "to_do_lists"
+                ]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ]
+        }
+    },
+    "definitions": {}
+}
